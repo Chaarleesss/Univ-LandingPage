@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+:root {
+  --primary: #065dfb;
+  --light: #fff;
+  --warning: #f06804;
+}
+
+/****************
+#Custom CSS
+******************/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/****************
+#Header CSS
+******************/
+header {
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+}
+
+header .nav-item .nav-link {
+  font-size: 14px;
+  color: var(--light);
+  font-weight: 600;
+  margin-left: 20px;
+}
+
+.navbar-toggler {
+  outline: none !important;
+  border: none !important;
+  color: var(--warning) !important;
+  box-shadow: none !important;
+  border-radius: none !important;
+}
+
+/****************
+#Hero CSS
+******************/
+.hero {
+  width: 100%;
+}
+
+.hero .carousel-item img {
+  height: 900px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero .carousel-item::before {
+  content: "";
+  background-color: #040f28;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+}
+
+.hero .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.hero .carousel-content-container {
+  text-align: center;
+  color: var(--light);
+}
+
+.hero .carousel-content-container h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 50px;
+}
+
+.hero .carousel-content-container p {
+  width: 70%;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 0 auto 30px auto;
+}
+
+.buttons .button1 {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  display: inline-block;
+  padding: 12px 30px;
+  line-height: 1px;
+  margin: 10px 10px;
+  color: var(--light);
+  border: 1px solid var(--light);
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .hero .carousel-content-container h2 {
+    font-size: 35px;
+  }
+
+  .hero .carousel-content-container p {
+    font-size: 13px;
+  }
+
+  .buttons .button1 {
+    font-size: 13px;
+    padding: 9px 30px;
+  }
+}
