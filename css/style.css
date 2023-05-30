@@ -243,3 +243,31 @@ About CSS
   border: 1px solid var(--light);
   border-radius: 50px;
 }
+
+/****************
+Courses CSS
+******************/
+
+.courses .single-courses-box {
+  margin-bottom: 30px;
+  position: relative;
+  padding: 40px 30px 20px;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.courses .single-courses-box .icon {
+  margin-bottom: 21px;
+}
+
+.courses .single-courses-box h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.courses .single-courses-box p {
+  font-size: 14px;
+  text-align: justify;
+}
