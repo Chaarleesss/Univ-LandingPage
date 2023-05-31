@@ -133,6 +133,33 @@ header .nav-item .nav-link {
 
 @media (max-width: 768px) {
   .hero .carousel-content-container h2 {
+    font-size: 25px;
+  }
+
+  .hero .carousel-content-container p {
+    font-size: 10px;
+  }
+
+  .buttons .button1 {
+    font-size: 8px;
+    padding: 9px 30px;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  /*.hero .carousel-item img {
+    height: 1000px;
+    width: 200%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }*/
+}
+
+@media (max-width: 500px) {
+  .hero .carousel-content-container h2 {
     font-size: 35px;
   }
 
@@ -197,7 +224,7 @@ header .nav-item .nav-link {
 
 .feature .main-feature-box p {
   font-family: "Poppins", sans-serif;
-  font-weight: 300, lighter;
+  font-weight: 400;
   font-size: 14px;
   text-transform: capitalize;
   position: relative;
@@ -280,6 +307,14 @@ Courses CSS
   transition: 0.5s;
 }
 
+.single-courses-box .img-fluid {
+  transition: 0.3s;
+}
+
+.single-courses-box .img-fluid:hover {
+  transform: scale(1.2);
+}
+
 .courses .text-center {
   color: white;
   margin-top: 50px;
@@ -303,6 +338,10 @@ Courses CSS
   font-size: 14px;
   color: white;
   text-align: justify;
+}
+
+.courses .buttons a {
+  color: #00a2ff;
 }
 
 /****************
