@@ -17,6 +17,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  background-color: #040f28;
 }
 
 a {
@@ -63,7 +64,7 @@ header .nav-item .nav-link {
 }
 
 .hero .carousel-item img {
-  height: 1000px;
+  height: 100%;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -157,9 +158,9 @@ header .nav-item .nav-link {
 #feature CSS
 ******************/
 .feature .main-feature-box {
+  background-color: #3d4861;
   margin-top: 40px;
   margin-bottom: 30px;
-  background-color: var(--light);
   box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
   position: relative;
   padding: 25px 20px;
@@ -187,6 +188,7 @@ header .nav-item .nav-link {
 }
 
 .feature .main-feature-box h3 {
+  color: #c300ff;
   font-size: 19px;
   font-weight: 700;
   padding-bottom: 7px;
@@ -199,6 +201,7 @@ header .nav-item .nav-link {
   font-size: 14px;
   text-transform: capitalize;
   position: relative;
+  color: white;
 }
 
 /****************
@@ -213,6 +216,7 @@ About CSS
   margin-bottom: 5px;
   color: var(--primary);
   font-size: 17px;
+  color: white;
 }
 
 .about h2 {
@@ -220,6 +224,19 @@ About CSS
   font-size: 30px;
   font-weight: 600;
   line-height: 1.3;
+  color: #ffffff;
+}
+
+.about h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #c300ff;
+}
+
+#more {
+  display: none;
 }
 
 .about p {
@@ -227,9 +244,10 @@ About CSS
   font-weight: 450;
   font-size: 15px;
   text-align: justify;
+  color: white;
 }
 
-.buttons .button3 {
+.button .read-more-btn {
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
@@ -249,12 +267,23 @@ Courses CSS
 ******************/
 
 .courses .single-courses-box {
+  outline: none !important;
+  border: none !important;
+  border-radius: none !important;
+  background-color: #3d4861;
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
   margin-bottom: 30px;
   position: relative;
   padding: 40px 30px 20px;
   z-index: 1;
   overflow: hidden;
   transition: 0.5s;
+}
+
+.courses .text-center {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 
 .courses .single-courses-box .icon {
@@ -265,9 +294,47 @@ Courses CSS
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
+  color: #c300ff;
 }
 
 .courses .single-courses-box p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-size: 14px;
+  color: white;
   text-align: justify;
+}
+
+/****************
+Team CSS
+******************/
+
+.choose .choose-item {
+  outline: none !important;
+  border: none !important;
+  background-color: #3d4861;
+  box-shadow: 0 10px 55px 5px rgba(137, 173, 255, 0.2);
+  margin-bottom: 70px;
+  padding: 10px;
+  border: none;
+}
+
+.choose .choose-item h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #c300ff;
+}
+
+.choose .choose-item p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  text-align: justify;
+}
+
+.choose .text-center {
+  color: white;
 }

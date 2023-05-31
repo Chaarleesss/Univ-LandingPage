@@ -19,7 +19,7 @@
   <body>
     <!--Navbar Start-->
     <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" id="home">
         <div class="container">
           <a class="navbar-brand" href="#"><img src="image/logo/HarvardLogo.png" width="100px" alt="" /></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,22 +28,22 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
+                <a class="nav-link active" aria-current="page" href="#about">About</a>
               </li>
-              <li class="nav-item">
+              <!--<li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Team</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#courses">Courses</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Courses</a>
+                <a class="nav-link active" aria-current="page" href="#gallery">Galerry</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Galerry</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -67,8 +67,8 @@
                     adipisci unde?
                   </p>
                   <div class="buttons">
-                    <a href="" class="button1">Our Services</a>
-                    <a href="" class="button1">Contact</a>
+                    <a href="https://www.instagram.com/chaaarleess_/" class="button1">Our Services</a>
+                    <a href="https://www.instagram.com/chaaarleess_/" class="button1">Contact</a>
                   </div>
                 </div>
               </div>
@@ -166,41 +166,58 @@
     <!--feature ingfo coy-->
 
     <!--About Section Start-->
-    <div class="about">
+    <div class="about" id="about">
       <div class="container-fluid">
+        <div class="row mt-4 mb-3">
+          <h2 class="text-center">About Us</h2>
+        </div>
         <div class="row">
           <div class="col-md-6 d-none d-none d-lg-flex">
-            <img src="/image/about/AH(2).jpg" width="960px" height="469px" class="img-fluid" alt="">
+            <img src="/image/about/AH(2).jpg" width="100%" class="img-fluid" alt="">
           </div>
           <div class="col-md-6">
             <div class="about-content">
-              <span>About Us</span>
-              <h2>Harvard University</h2>
+              <h3>Harvard University</h3>
               <p>Harvard University is a private Ivy League research university in Cambridge, Massachusetts, United States.
-                 Founded in 1636 as Harvard College and named for its first benefactor, the Puritan clergyman John Harvard
-                 , it is the oldest institution of higher learning in the United States. Its influence, wealth, and rankings
+                  Founded in 1636 as Harvard College and named for its first benefactor, the Puritan clergyman John Harvard
+                  , it is the oldest institution of higher learning in the United States. Its influence, wealth, and rankings
                   have made it one of the most prestigious universities in the world.</p>
-              <p>Harvard's founding was authorized by the Massachusetts colonial legislature, "dreading to leave an
-                illiterate ministry to the churches, when our present ministers shall lie in the dust"; though never
-                formally affiliated with any denomination, in its early years Harvard College primarily trained
-                Congregational clergy. Its curriculum and student body were gradually secularized during the 18th
-                century. By the 19th century, Harvard emerged as the most prominent academic and cultural
-                institution among the Boston elite.Following the American Civil War, under President
-                Charles William Eliot's long tenure (1869–1909), the college developed multiple affiliated professional
-                schools that transformed the college into a modern research university. In 1900, Harvard co-founded the
-                Association of American Universities.James B. Conant led the university through the Great Depression
-                and World War II, and liberalized admissions after the war.</p>
-              <p>The university is composed of ten academic faculties plus Harvard Radcliffe Institute. The Faculty
-                 of Arts and Sciences offers study in a wide range of undergraduate and graduate academic disciplines,
-                  and other faculties offer only graduate degrees, including professional degrees. Harvard has three
-                   main campuses: the 209-acre (85 ha) Cambridge campus centered on Harvard Yard; an adjoining campus
-                    immediately across Charles River in the Allston neighborhood of Boston; and the medical campus in
-                     Boston's Longwood Medical Area.Harvard's endowment is valued at $50.9 billion, making it the
-                      wealthiest academic institution in the world. Endowment income enables the undergraduate college
-                       to admit students regardless of financial need and provide generous financial aid with no loans.Harvard
-                        Library is the world's largest academic library system, comprising 79 individual libraries holding 20 million items.</p>
-              <div class="buttons">
-                <a href="" class="button3">Read More <i class="bi bi-arrow-right-circle-fill"></i></a>
+                  <p>Harvard's founding was authorized by the Massachusetts colonial legislature,
+                      "dreading
+                      to leave an
+                      illiterate ministry to the churches, when our present ministers shall lie in the dust"; though never
+                      formally affiliated with any denomination, in its early years Harvard College primarily trained
+                      Congregational clergy. Its curriculum and student body were gradually secularized during the 18th
+                      century. By the 19th century, Harvard emerged as the most prominent academic and cultural
+                      institution among the Boston elite.Following the American Civil War, under President
+                      Charles William Eliot's long tenure (1869–1909), the college developed multiple affiliated professional
+                      schools that transformed the college into a modern research university. In 1900, Harvard co-founded the
+                      Association of American Universities.James B. Conant led the university through the Great Depression
+                      and World War II, and liberalized admissions after the war.</p>
+                  <p>
+                    <div class="read-more-text">
+                      <span id="dots"></span><p id="more">The
+                          university is composed of ten academic
+                          faculties plus Harvard Radcliffe Institute.
+                          The
+                          Faculty
+                          of Arts and Sciences offers study in a wide range of undergraduate and graduate academic
+                          disciplines,
+                          and other faculties offer only graduate degrees, including professional degrees. Harvard has three
+                          main campuses: the 209-acre (85 ha) Cambridge campus centered on Harvard Yard; an adjoining campus
+                          immediately across Charles River in the Allston neighborhood of Boston; and the medical campus in
+                          Boston's Longwood Medical Area.Harvard's endowment is valued at $50.9 billion, making it the
+                          wealthiest academic institution in the world. Endowment income enables the undergraduate college
+                          to admit students regardless of financial need and provide generous financial aid with no
+                          loans.Harvard
+                          Library is the world's largest academic library system, comprising 79 individual libraries holding
+                          20
+                          million
+                          items.</p>
+                  </p>
+              </div>
+              <div class="button">
+                <button onclick="myFunction()" id="myBtn" class="read-more-btn">Read More...</button>
               </div>
             </div>
           </div>
@@ -211,7 +228,7 @@
 
 
     <!--Courses Section-->
-    <section class="courses mt-mb-5">
+    <section class="courses mt-mb-5" id="courses">
       <div class="container">
         <div class="row mt-4">
           <h2 class="text-center">Our Best Courses</h2>
@@ -223,10 +240,10 @@
                 <img src="/image/courses/civil.png" width="40%" class="img-fluid" alt="">
               </div>
               <h3>Civil Engineering</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                   Harum neque vero labore aut maxime, atque voluptas minima
-                    quisquam nam autem beatae tempore earum voluptate ipsa,
-                   dolore quod laboriosam deserunt nemo.</p>
+                <p>Civil engineering is a professional engineering discipline that deals with the design,
+                  construction, and maintenance of the physical and naturally built environment, including
+                   public works such as roads, bridges, canals, dams, airports, sewage systems, pipelines,
+                    structural components of buildings, and railways.</p>
                    <div class="buttons">
                     <a href="" class="button3">Read More <i class="bi bi-arrow-right-circle-fill"></i></a>
                    </div>
@@ -317,9 +334,147 @@
       </div>
     </section>
 
+    
+     <!--Courses Section-->
+    <section class="choose mt-mb-5" id="gallery">
+      <div class="container">
+        <div class="row mt-4">
+          <h2 class="text-center mb-5">Why we Choose Harvard School</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="choose-item border">
+              <img src="image/offer/profesionalTeacher.jpg" class="img-fluid" alt="">
+              <div>
+                <h3>Profesional Teacher</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Iure asperiores fugit esse laborum architecto impedit ullam minima sed,
+                   ad quam non consequuntur perspiciatis modi, totam aliquam quo vel molestias recusandae.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="choose-item border">
+              <img src="image/offer/project_baced_study.jpg" class="img-fluid" alt="">
+              <div>
+                <h3>Project Based Study</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Iure asperiores fugit esse laborum architecto impedit ullam minima sed,
+                   ad quam non consequuntur perspiciatis modi, totam aliquam quo vel molestias recusandae.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="choose-item border">
+              <img src="image/offer/real-worl_development.jpg" class="img-fluid" alt="">
+              <div>
+                <h3>Real World Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   Iure asperiores fugit esse laborum architecto impedit ullam minima sed,
+                   ad quam non consequuntur perspiciatis modi, totam aliquam quo vel molestias recusandae.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <!-- Footer -->
+<footer class="text-center text-lg-start text-white pt-4" style="background-color: #3d4861;">
+  
+
+  <!-- Section: Links  -->
+  <section class="" id="contact">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Harvard University
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#home" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="#about" class="text-reset">About</a>
+          </p>
+          <p>
+            <a href="#galerry" class="text-reset">Gallery</a>
+          </p>
+          <p>
+            <a href="#contact" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Our Team
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Charles</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Rasya</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Dion</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p> Jakarta, JKT 10012, ID</p>
+          <p>
+            
+            kelompok1@gmail.com
+          </p>
+          <p>+ 62 234 567 88</p>
+          <p>+ 62 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Kelompok 1</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
 
 
     <!-- Bootstrap JS -->
+    <script src="script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
